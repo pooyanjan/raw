@@ -1,0 +1,14 @@
+
+@font-face {
+    font-family: dana;
+    src: url("../../fonts/dana/dana-fa-num.ttf") format("truetype"),
+    url("../../fonts/dana/dana-fa-num.woff") format("woff"),
+    url("../../fonts/dana/dana-fa-num.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: kalameh;
+    src: url("../../fonts/kalameh/kalameh-fa-num.ttf") format("truetype"),
+    url("../../fonts/kalameh/kalameh-fa-num.woff") format("woff"),
+    url("../../fonts/kalameh/kalameh-fa-num.woff2") format("woff2");
+}

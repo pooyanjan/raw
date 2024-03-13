@@ -1,0 +1,50 @@
+.navbar {
+  @apply w-full h-auto md:flex md:justify-around md:items-center bg-BaseBlack text-white p-2  ;
+}
+.navbar ul {
+  @apply hidden md:flex flex-row items-center lg:gap-7 md:gap-5 ;
+}
+.x {
+  @apply flex justify-between;
+}
+.navbar ul li:hover {
+  @apply text-BaseRed transition-all duration-200 
+}
+.navbar ul li  {
+  @apply relative mr-2 ;
+}
+.navbar ul li .pro_list {
+  @apply absolute top-6  -right-2 flex flex-col bg-BaseGreen text-BaseColor  rounded-md w-40 h-52 items-start justify-center z-20 scale-0 opacity-0 transition-all duration-300;
+}
+.navbar ul li:hover .pro_list{
+  @apply scale-100 opacity-100 transition-all duration-300 
+}
+.navbar .menu li .pro_list li:hover a{
+  @apply text-BaseBlack
+}
+
+.navbar .menu_btn {
+  @apply w-10 h-10 items-center  flex md:hidden
+}
+.navbar .menu_btn svg {
+  @apply w-6 h-6;
+}
+.navbar .menu_btn svg path {
+  @apply fill-white;
+}
+.navbar .btns {
+  @apply flex items-center gap-2;
+}
+.navbar .btns .btn1 {
+  @apply bg-BaseRed px-4 py-1  rounded-md;
+}
+.navbar .btns .btn2 {
+  @apply bg-BaseGreen  px-4 py-1  rounded-md;
+}
+.navbar .btns .btn1:hover {
+  @apply bg-BaseRed/85 transition-all duration-200
+}
+.navbar .btns .btn2:hover {
+  @apply bg-BaseGreen/85 transition-all duration-200
+}
+

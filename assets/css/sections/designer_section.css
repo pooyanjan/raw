@@ -1,0 +1,32 @@
+.container{
+    @apply w-full
+}
+.Designer_section .row{
+    @apply w-full h-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid gap-5 xl:w-full
+}
+.container h2{
+    @apply text-center font-kalameh text-xl md:text-3xl my-2
+}
+.Designer_section .row .card{
+    @apply  relative overflow-hidden
+}
+.Designer_section .row .card:hover{
+    @apply relative overflow-hidden cursor-pointer
+}
+.Designer_section .row .card .name p{
+    @apply absolute -bottom-full right-0  font-kalameh flex items-center justify-center bg-[rgba(255,255,255,0.3)] w-full h-12  transition-all duration-300 
+}
+.Designer_section .row .card:hover .name p{
+    @apply  bottom-0  text-lg   transition-all duration-300
+}
+.Designer_section .row .card .title p{
+    @apply absolute top-0 -right-full  font-kalameh flex items-center justify-center bg-[rgba(255,255,255,0.3)] w-24 h-10 rounded-b-lg  transition-all duration-300 
+}
+.Designer_section .row .card:hover .title p{
+    @apply  right-3  text-lg   transition-all duration-300
+}
+.Designer_section .row .card  {
+    @apply  rounded-xl mx-10 md:mx-3
+}
+
+

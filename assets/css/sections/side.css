@@ -1,0 +1,33 @@
+.side {
+  @apply w-44 h-screen bg-BaseGreen text-xl z-50 top-0 fixed -right-full flex flex-col justify-items-stretch  items-center gap-5 py-10 transition-all duration-300;
+}
+.side.active {
+  @apply right-0  transition-all duration-300;
+}
+
+.overlay {
+  @apply w-screen h-screen bg-gray-200/90 fixed top-0 right-0 opacity-0 -z-40;
+}
+.overlay.active {
+  @apply opacity-100 z-30;
+}
+
+.sub {
+  @apply flex gap-3;
+}
+.sub svg {
+  @apply fill-BaseBlack size-8 flex gap-2;
+}
+.arrow{
+  @apply rotate-0 transition-all duration-150
+}
+.arrow.active{
+  @apply rotate-[180deg] transition-all duration-150
+}
+
+.pro {
+  @apply w-44 h-60 bg-BaseGreen z-40 text-lg text-center top-20 fixed -right-full flex flex-col justify-center  items-center gap-5 py-10 transition-all duration-300 ;
+}
+.pro.active {
+    @apply right-[176px]  transition-all duration-300 ;
+  }

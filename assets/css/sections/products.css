@@ -1,0 +1,32 @@
+.container h3{
+    @apply w-full font-kalameh text-2xl mt-10 h-20 bg-BaseBlack text-BaseColor rounded-lg flex justify-center items-center 
+}
+.container .products   {
+    @apply flex md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4  mt-2 w-full md:gap-y-2 md:gap-x-2 overflow-x-auto md:overflow-x-visible relative 
+}
+
+.products .product{
+    @apply w-[250px] md:w-full md:h-full  h-[250px] px-2 shrink-0 m-auto  cursor-pointer relative overflow-hidden
+}
+
+.product img{
+    @apply w-full h-full object-cover
+}
+
+.products .product::after{
+    @apply absolute top-0 -left-full z-10 content-[''] skew-x-[152deg] bg-[rgba(255,255,255,0.5)] transition-all duration-700
+}
+.products .product::after:hover{
+    @apply absolute top-0 left-[410px] z-10 content-[''] skew-x-[152deg] w-full h-full bg-[rgba(255,255,255,0.5)] transition-all duration-700
+}
+
+/* Scroll Bar */
+.products::-webkit-scrollbar{
+    @apply h-2
+}
+.products::-webkit-scrollbar-track{
+    @apply bg-gray-400/70 
+}
+.products::-webkit-scrollbar-thumb{
+    @apply bg-gray-500 rounded-2xl
+}
