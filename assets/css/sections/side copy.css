@@ -1,4 +1,4 @@
-/* .side {
+.side {
   @apply w-48 h-screen bg-BaseGreen text-xl z-50 top-0 fixed -right-full flex flex-col justify-items-stretch  items-center gap-5 py-10 transition-all duration-300;
 }
 .side.active {
@@ -30,4 +30,4 @@
 }
 .pro.active {
     @apply right-[176px]  transition-all duration-300 ;
-  } */
+  }

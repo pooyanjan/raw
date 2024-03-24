@@ -9,6 +9,7 @@
 @import "./sections/designer_section.css";
 @import "./sections/products.css";
 @import "./sections/side.css";
+@import "./sections/side2.css";
 
 
 @tailwind base; 
